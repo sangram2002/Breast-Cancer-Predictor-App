@@ -75,7 +75,7 @@ def get_radar_chart(input_data):
     return fig
 
 def get_clean_data():
-    data = pd.read_csv('D:\Data Science\Extra Projects\Breast-Cancer-Prediction\data.csv')
+    data = pd.read_csv('data.csv')
     print(data.head())
     data=data.drop(['Unnamed: 32', 'id'], axis=1)
     data['diagnosis'] = data['diagnosis'].map({'M':1, 'B':0})
